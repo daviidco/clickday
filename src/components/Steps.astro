@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+import icon from "../assets/logo/icon.svg";
+import stepsPhoto from "../assets/images/steps-photo.jpg";
+---
+
+<section class="steps" id="soluciones">
+  <div class="container steps-container">
+    <div class="steps-card">
+      <div class="steps-pills">
+        <div class="step">
+          <div class="step-ball step-ball--top"><span class="step-number">1</span></div>
+          <div class="step-body step-body--bottom">
+            <div class="step-title">Activa tu Poder</div>
+            <div class="step-text">
+              Crea tu cuenta en<br /><strong>ClickDay</strong> y entra al<br />mundo de las citas<br />automáticas.
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-capsule">
+            <div class="step-number-slot"><span class="step-number">2</span></div>
+            <div class="step-copy">
+              <div class="step-title">Haz Match<br />con tu Negocio</div>
+              <div class="step-text">
+                Enlaza <strong>ClickDay</strong><br />con tu web.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-body step-body--top">
+            <div class="step-number-slot"><span class="step-number">3</span></div>
+          </div>
+          <div class="step-ball step-ball--bottom">
+            <div>
+              <div class="step-title">Domina tu<br />Tiempo</div>
+              <div class="step-text">
+                Ajusta horarios,<br />disponibilidad y<br />detalles clave.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-capsule">
+            <div class="step-number-slot"><span class="step-number">4</span></div>
+            <div class="step-copy">
+              <div class="step-title">Activa el Click</div>
+              <div class="step-text">
+                Comparte tu link<br />con tus clientes y<br />empieza a recibir<br />reservas sin fricción.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="steps-description">
+        Convierte tu agenda<br />
+        en una experiencia<br />
+        inteligente.
+      </h2>
+    </div>
+
+    <div class="steps-image">
+      <Image class="steps-photo" src={stepsPhoto} alt="Persona agendando una cita con ClickDay" loading="lazy" />
+
+      <div class="steps-badge steps-badge--one">
+        <p class="steps-badge-title">¡Ya casi es hora!</p>
+        <p class="steps-badge-text">Si necesitas algo, estamos atentos.<br />¡Gracias por agendar con<br />ClickDay!</p>
+      </div>
+
+      <div class="steps-badge steps-badge--two">
+        <p class="steps-badge-title">¡Ya casi es hora!</p>
+        <p class="steps-badge-text">Si necesitas algo, estamos atentos.<br />¡Gracias por agendar con<br />ClickDay!</p>
+      </div>
+
+      <img class="steps-accent" src={icon.src} width={icon.width} height={icon.height} alt="" />
+    </div>
+  </div>
+</section>

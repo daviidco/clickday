@@ -1,0 +1,27 @@
+---
+import logoHorizontal from "../assets/logo/logo-horizontal.svg";
+---
+
+<header class="container">
+  <a href="/" class="logo">
+    <img src={logoHorizontal.src} width={logoHorizontal.width} height={logoHorizontal.height} alt="ClickDay" />
+  </a>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <label for="nav-toggle" class="nav-toggle-btn" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav class="nav-links">
+    <a href="#soluciones">Soluciones</a>
+    <a href="#funciones">Funciones</a>
+    <a href="#">Testimonios</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a href="/create-account" class="nav-btn">Create Account</a>
+    <a href="/login" class="nav-btn">Login</a>
+  </div>
+</header>
