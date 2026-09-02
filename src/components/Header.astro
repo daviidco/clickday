@@ -1,9 +1,11 @@
 ---
 import logoHorizontal from "../assets/logo/logo-horizontal.svg";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <header class="container">
-  <a href="/" class="logo">
+  <a href={`${base}/`} class="logo">
     <img src={logoHorizontal.src} width={logoHorizontal.width} height={logoHorizontal.height} alt="ClickDay" />
   </a>
 
@@ -21,7 +23,7 @@ import logoHorizontal from "../assets/logo/logo-horizontal.svg";
   </nav>
 
   <div class="nav-actions">
-    <a href="/create-account" class="nav-btn">Create Account</a>
-    <a href="/login" class="nav-btn">Login</a>
+    <a href={`${base}/create-account`} class="nav-btn">Create Account</a>
+    <a href={`${base}/login`} class="nav-btn">Login</a>
   </div>
 </header>

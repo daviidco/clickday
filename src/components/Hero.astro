@@ -1,3 +1,7 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
 <section class="hero">
   <div class="container">
     <h1 class="hero-title">
@@ -37,7 +41,7 @@
         puedan <strong>agendarte</strong>.
       </p>
 
-      <a href="/create-account" class="hero-cta">Comienza ahora</a>
+      <a href={`${base}/create-account`} class="hero-cta">Comienza ahora</a>
     </div>
   </div>
 </section>
